@@ -4,8 +4,7 @@ using System.Text;
 
 namespace UnionFind.Helpers
 {
-    
-    class QuickFindUF
+    class QuickUnionUF
     {
         private int[] id; // access to component id (site indexed)
         private int count; // number of components
@@ -13,7 +12,7 @@ namespace UnionFind.Helpers
         /// Constructor
         /// </summary>
         /// <param name="n">Size of array</param>
-        public QuickFindUF(int n)
+        public QuickUnionUF(int n)
         {
             id = new int[n];
             count = n;
@@ -49,33 +48,29 @@ namespace UnionFind.Helpers
         /// <param name="q">second node</param>
         public void Union(int p, int q)
         {
-            int pid = Find(p);
-            int qid = Find(q);
-
-            // if already connected do nothing
-            if(pid == qid)
+            // Give p and q the same root
+            int proot = Find(p);
+            int qroot = Find(q);
+            if(proot == qroot)
             {
                 return;
             }
-            // else union them and reduce number of connected components
-            for (int i = 0; i < id.Length; i++)
-            {
-                if(id[i] == pid)
-                {
-                    id[i] = qid;
-                }
-            }
+            id[proot] = qroot;
             count--;
         }
 
         /// <summary>
-        /// returns value of current id in the array
+        /// recursively gets id of current element till element is equal to id
         /// </summary>
-        /// <param name="p"></param>
-        /// <returns>value of the current element in id[i]</returns>
+        /// <param name="p">node number</param>
+        /// <returns>root of the tree</returns>
         public int Find(int p)
         {
-            return id[p];
+            while(p != id[p])
+            {
+                p = id[p];
+            }
+            return p;
         }
 
     }
