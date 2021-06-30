@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionFind", "UnionFind\UnionFind.csproj", "{AF27B30F-E628-4D29-88BE-C091F00AC2BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{2AECB393-CB26-4AAC-A441-C80322831DEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AF27B30F-E628-4D29-88BE-C091F00AC2BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF27B30F-E628-4D29-88BE-C091F00AC2BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF27B30F-E628-4D29-88BE-C091F00AC2BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AECB393-CB26-4AAC-A441-C80322831DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AECB393-CB26-4AAC-A441-C80322831DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AECB393-CB26-4AAC-A441-C80322831DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AECB393-CB26-4AAC-A441-C80322831DEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
