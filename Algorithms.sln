@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionFind", "UnionFind\Unio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{2AECB393-CB26-4AAC-A441-C80322831DEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue", "Queue\Queue.csproj", "{2270DE14-01B5-403F-B229-131A9E1B74F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2AECB393-CB26-4AAC-A441-C80322831DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AECB393-CB26-4AAC-A441-C80322831DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AECB393-CB26-4AAC-A441-C80322831DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2270DE14-01B5-403F-B229-131A9E1B74F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2270DE14-01B5-403F-B229-131A9E1B74F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2270DE14-01B5-403F-B229-131A9E1B74F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2270DE14-01B5-403F-B229-131A9E1B74F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
