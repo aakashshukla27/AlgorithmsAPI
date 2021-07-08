@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionFind", "UnionFind\UnionFind.csproj", "{AF27B30F-E628-4D29-88BE-C091F00AC2BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnionFind", "UnionFind\UnionFind.csproj", "{AF27B30F-E628-4D29-88BE-C091F00AC2BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{2AECB393-CB26-4AAC-A441-C80322831DEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack", "Stack\Stack.csproj", "{2AECB393-CB26-4AAC-A441-C80322831DEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue", "Queue\Queue.csproj", "{2270DE14-01B5-403F-B229-131A9E1B74F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queue", "Queue\Queue.csproj", "{2270DE14-01B5-403F-B229-131A9E1B74F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{500A8226-FE53-4141-94E5-069FE2FB022B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{2270DE14-01B5-403F-B229-131A9E1B74F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2270DE14-01B5-403F-B229-131A9E1B74F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2270DE14-01B5-403F-B229-131A9E1B74F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{500A8226-FE53-4141-94E5-069FE2FB022B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500A8226-FE53-4141-94E5-069FE2FB022B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500A8226-FE53-4141-94E5-069FE2FB022B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500A8226-FE53-4141-94E5-069FE2FB022B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
