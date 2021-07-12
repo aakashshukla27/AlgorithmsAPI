@@ -4,11 +4,11 @@ using System.Text;
 
 namespace SortingAlgorithms.Helpers
 {
-    class QuickSort : Library
+    class QuickSortInsertionSort : Library
     {
         IComparable[] returnResult;
-
-        public QuickSort(IComparable[] a)
+        private int cutoff = 10;
+        public QuickSortInsertionSort(IComparable[] a)
         {
             Sort(a);
         }
@@ -18,19 +18,17 @@ namespace SortingAlgorithms.Helpers
             int i = lo, j = hi + 1;
             while (true)
             {
-                while(Less(a[++i], a[lo]))
-                    if(i == hi)
+                while (Less(a[++i], a[lo]))
+                    if (i == hi)
                         break;
-
                 while (Less(a[lo], a[--j]))
                     if (j == lo)
                         break;
-                
-                if (i >= j) break;
+                if (i >= j)
+                    break;
                 Exchange(a, i, j);
             }
             return j;
-
         }
 
         private void Sort(IComparable[] a)
@@ -43,7 +41,12 @@ namespace SortingAlgorithms.Helpers
 
         private void Sort(IComparable[] a, int lo, int hi)
         {
-            if (hi <= lo) return;
+            if(hi <= lo + cutoff - 1)
+            {
+                InsertionSort insertionSort = new InsertionSort(a);
+                a = insertionSort.returnSorted();
+                return;
+            }
             int j = Partition(a, lo, hi);
             Sort(a, lo, j - 1);
             Sort(a, j + 1, hi);
