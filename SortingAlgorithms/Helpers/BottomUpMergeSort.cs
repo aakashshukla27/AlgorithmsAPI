@@ -4,22 +4,37 @@ using System.Text;
 
 namespace SortingAlgorithms.Helpers
 {
+    /// <summary>
+    /// Non recursive merge sort
+    /// </summary>
     class BottomUpMergeSort : Library
     {
         private IComparable[] returnResult;
         private IComparable[] aux;
+        /// <summary>
+        /// Constructor for Merge sort
+        /// </summary>
+        /// <param name="a">input list</param>
         public BottomUpMergeSort(IComparable[] a)
         {
             Sort(a);
         }
 
-
+        /// <summary>
+        /// Merge process
+        /// </summary>
+        /// <param name="a">input list</param>
+        /// <param name="lo">lower bound</param>
+        /// <param name="mid">mid point</param>
+        /// <param name="hi">upper bound</param>
         private void Merge(IComparable[] a, int lo, int mid, int hi)
         {
+            //Copying into auxiliary array
             for(int k=0; k<a.Length; k++)
             {
                 aux[k] = a[k];
             }
+
             int i = lo, j = mid + 1;
             for (int k = lo; k <= hi; k++)
             {
@@ -42,6 +57,10 @@ namespace SortingAlgorithms.Helpers
             }
         }
 
+        /// <summary>
+        /// Driver function for sort functionality
+        /// </summary>
+        /// <param name="a">Input list</param>
         private void Sort(IComparable[] a)
         {
             int N = a.Length;
@@ -55,7 +74,9 @@ namespace SortingAlgorithms.Helpers
             }
             returnResult = a;
         }
-
+        /// <summary>
+        /// Display List
+        /// </summary>
         public void Display()
         {
             Show(returnResult);
