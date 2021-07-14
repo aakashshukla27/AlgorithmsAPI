@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queue", "Queue\Queue.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{500A8226-FE53-4141-94E5-069FE2FB022B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PriorityQueue", "PriorityQueue\PriorityQueue.csproj", "{365CA8CA-06E1-426D-B552-A4510CEC678A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PriorityQueue", "PriorityQueue\PriorityQueue.csproj", "{365CA8CA-06E1-426D-B552-A4510CEC678A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolTable", "SymbolTable\SymbolTable.csproj", "{07C83743-1EC2-4A43-BBA8-8B7F85139FAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{365CA8CA-06E1-426D-B552-A4510CEC678A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{365CA8CA-06E1-426D-B552-A4510CEC678A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{365CA8CA-06E1-426D-B552-A4510CEC678A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07C83743-1EC2-4A43-BBA8-8B7F85139FAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C83743-1EC2-4A43-BBA8-8B7F85139FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C83743-1EC2-4A43-BBA8-8B7F85139FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C83743-1EC2-4A43-BBA8-8B7F85139FAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
