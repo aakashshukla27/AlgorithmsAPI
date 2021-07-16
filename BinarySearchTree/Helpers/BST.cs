@@ -8,7 +8,7 @@ namespace Tree.Helpers
 {
     class BST<Key, Value> where Key : IComparable<Key> where Value: IComparable<Value>
     {
-        private Node<Key, Value> root;
+        public Node<Key, Value> root { get; internal set; }
 
         public Value Get(Key key)
         {
@@ -112,6 +112,52 @@ namespace Tree.Helpers
             q.Enqueue(x.key);
         }
 
+        public void DeleteMin()
+        {
+            root = DeleteMin(root);
+        }
 
+        private Node<Key, Value> DeleteMin(Node<Key, Value> x)
+        {
+            if (x.left == null) return x.right;
+            x.left = DeleteMin(x.left);
+            x.N = 1 + Size(x.left) + Size(x.right);
+            return x;
+        }
+
+        public void Delete(Key key)
+        {
+            root = Delete(root, key);
+        }
+
+        private Node<Key, Value> Delete(Node<Key, Value> x, Key key)
+        {
+            if (x == null) return x;
+            int cmp = key.CompareTo(x.key);
+            if (cmp < 0) x.left = Delete(x.left, key);
+            else if (cmp > 0) x.right = Delete(x.right, key);
+            else
+            {
+                if (x.right == null) return x.left;
+                if (x.left == null) return x.right;
+                Node<Key, Value> t = x;
+                x = Min(t.right);
+                x.right = DeleteMin(t.right);
+                x.left = t.left;
+            }
+            x.N = Size(x.left) + Size(x.right) + 1;
+            return x;
+        }
+
+        public Key Min()
+        {
+            return Min(root).key;
+        }
+        private Node<Key, Value> Min(Node<Key, Value> x)
+        {
+            if (x.left == null) return x;
+            return Min(x.left);
+        }
     }
 }
+ 
