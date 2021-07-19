@@ -31,18 +31,12 @@ namespace Graphs.Helpers
         /// Vertex Count
         /// </summary>
         /// <returns>Number of vertices</returns>
-        public int Vertex()
-        {
-            return V;
-        }
+        public int Vertex() => V;
         /// <summary>
         /// Edge Count
         /// </summary>
         /// <returns>Number of edges</returns>
-        public int Edge()
-        {
-            return E;
-        }
+        public int Edge() => E;
         /// <summary>
         /// Add edges to graph
         /// </summary>
@@ -60,10 +54,7 @@ namespace Graphs.Helpers
         /// </summary>
         /// <param name="v">Vertex number</param>
         /// <returns>Adjacency List of vertex</returns>
-        public LinkedList<int> adjacencyList(int v)
-        {
-            return adj[v];
-        }
+        public LinkedList<int> adjacencyList(int v) => adj[v];
 
         /// <summary>
         /// degree of a vartex
@@ -100,10 +91,7 @@ namespace Graphs.Helpers
         /// Average degree
         /// </summary>
         /// <returns>Average degree of the graph</returns>
-        public int averageDegree()
-        {
-            return 2 * E / V;
-        }
+        public int averageDegree() => 2 * E / V;
 
         /// <summary>
         /// Number of self loops
