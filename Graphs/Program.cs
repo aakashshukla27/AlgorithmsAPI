@@ -1,4 +1,5 @@
 ﻿using Graphs.Helpers;
+using Graphs.Problems;
 using System;
 using System.Collections.Generic;
 
@@ -24,14 +25,37 @@ namespace Graphs
             list.Add(new Edge(4, 7, 0.37));
             list.Add(new Edge(0, 4, 0.38));
             list.Add(new Edge(6, 2, 0.40));
+            list.Add(new Edge(3, 6, 0.52));
+            list.Add(new Edge(6, 0, 0.58));
+            list.Add(new Edge(6, 4, 0.93));
 
             for (int i = 0; i < list.Count; i++)
             {
                 edgeWeightedGraph.AddEdge(list[i]);
             }
 
-            KruskalMST kruskal = new KruskalMST(edgeWeightedGraph);
-            var temp = kruskal.MinimumSpanningTree();
+
+            //LazyPrimMST prim = new LazyPrimMST(edgeWeightedGraph);
+            //var temp = prim.MinimumSpanningTree();
+            //foreach(var item in temp)
+            //{
+            //    Console.WriteLine(item.v + " -> " + item.w + " : " + item.weight);
+            //}
+
+            //int[][] temp = new int[10][];
+            //temp[0] = new int[2] { 1, 2 };
+            //temp[1] = new int[2] { 2, 3 };
+
+            //for (int i = 0; i < temp.Length; i++)
+            //{
+            //    int temp1 = temp[0][0];
+            //}
+            //int[][] arr = new int[1][];
+            //arr[0] = new int[2] { 1,0 };
+            ////arr[1] = new int[2] { 0, 1 };
+            //CanFinishCourses can = new CanFinishCourses();
+            //can.CanFinish(2, arr);
+
 
         }
     }

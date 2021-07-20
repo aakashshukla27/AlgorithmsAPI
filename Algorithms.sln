@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SymbolTable", "SymbolTable\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tree", "BinarySearchTree\Tree.csproj", "{8F980773-3F74-490E-846B-2DE455C151D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphs", "Graphs\Graphs.csproj", "{12AF7519-C233-4812-878A-6494E1FD841C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graphs", "Graphs\Graphs.csproj", "{12AF7519-C233-4812-878A-6494E1FD841C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
