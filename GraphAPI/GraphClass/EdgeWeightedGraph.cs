@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Graphs.Helpers
+namespace GraphAPI.GraphClass
 {
     class EdgeWeightedGraph
     {
         private readonly int V;
         private int E;
         private LinkedList<Edge>[] adj;
-        
+
         public EdgeWeightedGraph(int V)
         {
             this.V = V;
@@ -46,6 +46,5 @@ namespace Graphs.Helpers
                     if (e.other(v) > v) stack.Push(e);
             return stack;
         }
-
     }
 }

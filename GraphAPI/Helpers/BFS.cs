@@ -1,10 +1,11 @@
-﻿using System;
+﻿using GraphAPI.GraphClass;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Graphs.Helpers
+namespace GraphAPI.Helpers
 {
     class BFS
     {
@@ -27,7 +28,7 @@ namespace Graphs.Helpers
             while (queue.Any())
             {
                 int v = queue.Dequeue();
-                foreach(int w in G.adjacencyList(v))
+                foreach (int w in G.adjacencyList(v))
                 {
                     if (!marked[w])
                     {

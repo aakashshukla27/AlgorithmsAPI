@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Graphs.Helpers
+namespace GraphAPI.GraphClass
 {
     class Digraph
     {
@@ -67,7 +67,7 @@ namespace Graphs.Helpers
             Digraph r = new Digraph(V);
             for (int i = 0; i < V; i++)
             {
-                foreach(int w in adjacencyList(i))
+                foreach (int w in adjacencyList(i))
                 {
                     r.AddEdge(w, i);
                 }

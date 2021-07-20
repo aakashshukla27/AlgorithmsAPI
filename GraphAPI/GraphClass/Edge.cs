@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Graphs.Helpers
+namespace GraphAPI.GraphClass
 {
     class Edge
     {
@@ -19,7 +19,7 @@ namespace Graphs.Helpers
         }
 
         public double Weight() => weight;
-       
+
 
         public int either() => v;
 
@@ -33,6 +33,5 @@ namespace Graphs.Helpers
         }
 
         public string EdgeToString() => ("%d-%d %.2f", v, w, weight).ToString();
-
     }
 }

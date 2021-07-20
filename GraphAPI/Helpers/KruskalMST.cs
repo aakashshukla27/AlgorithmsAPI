@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GraphAPI.GraphClass;
+using GraphAPI.Helpers;
 
-namespace Graphs.Helpers
+namespace GraphAPI.Helpers
 {
     class KruskalMST
     {

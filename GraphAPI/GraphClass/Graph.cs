@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Graphs.Helpers
+namespace GraphAPI.GraphClass
 {
     class Graph
     {
@@ -126,8 +126,5 @@ namespace Graphs.Helpers
                 Console.WriteLine();
             }
         }
-
-
-
     }
 }
