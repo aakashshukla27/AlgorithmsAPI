@@ -6,13 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tree.Problems
 {
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-        public TreeNode(int x) { val = x; }
-    }
+    
     class LowestCommonAncestor
     {
         public TreeNode LowestCommonAncestorSolution(TreeNode root, TreeNode p, TreeNode q)
