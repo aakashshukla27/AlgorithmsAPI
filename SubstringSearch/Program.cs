@@ -1,12 +1,17 @@
-﻿using System;
+﻿using StringAlgorithms.Helpers;
+using System;
 
-namespace SubstringSearch
+namespace StringAlgorithms
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //PatternSearch ps = new PatternSearch();
+            //var temp = ps.SearchBruteForce("ABRA", "ABACADABRAC");
+
+            KnuthMorrisPratt kmp = new KnuthMorrisPratt("TEST");
+            int temp = kmp.search("THIS IS A TEST TEXT");
         }
     }
 }
