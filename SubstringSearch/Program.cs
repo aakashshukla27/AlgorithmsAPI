@@ -7,11 +7,9 @@ namespace StringAlgorithms
     {
         static void Main(string[] args)
         {
-            //PatternSearch ps = new PatternSearch();
-            //var temp = ps.SearchBruteForce("ABRA", "ABACADABRAC");
 
-            KnuthMorrisPratt kmp = new KnuthMorrisPratt("TEST");
-            int temp = kmp.search("THIS IS A TEST TEXT");
+            BoyerMoore bm = new BoyerMoore("NEEDLE");
+            int temp = bm.search("FINADINAHAYSTACKNEEDLEINA");
         }
     }
 }
