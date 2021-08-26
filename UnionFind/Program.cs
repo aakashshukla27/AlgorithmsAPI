@@ -1,4 +1,5 @@
 ﻿using System;
+using UnionFind.Helpers;
 
 namespace UnionFind
 {
@@ -7,6 +8,7 @@ namespace UnionFind
         static void Main(string[] args)
         {
             Console.WriteLine("Union Find");
+            WeightedQuickUnionPathCompression xyz = new WeightedQuickUnionPathCompression(10);
         }
     }
 }

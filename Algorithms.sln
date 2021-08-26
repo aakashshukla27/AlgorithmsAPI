@@ -23,6 +23,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphAPI", "GraphAPI\GraphA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringAlgorithms", "SubstringSearch\StringAlgorithms.csproj", "{B07C3730-FC50-4232-9F0D-05984E5DB681}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadixSort", "RadixSort\RadixSort.csproj", "{B5A2DBEF-DC92-4D36-B508-2D9984B4E9EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tries", "Tries\Tries.csproj", "{AF5BCA61-FFA1-4E50-A18A-0FAF85D35268}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{B07C3730-FC50-4232-9F0D-05984E5DB681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B07C3730-FC50-4232-9F0D-05984E5DB681}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B07C3730-FC50-4232-9F0D-05984E5DB681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A2DBEF-DC92-4D36-B508-2D9984B4E9EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A2DBEF-DC92-4D36-B508-2D9984B4E9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A2DBEF-DC92-4D36-B508-2D9984B4E9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A2DBEF-DC92-4D36-B508-2D9984B4E9EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF5BCA61-FFA1-4E50-A18A-0FAF85D35268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5BCA61-FFA1-4E50-A18A-0FAF85D35268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5BCA61-FFA1-4E50-A18A-0FAF85D35268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5BCA61-FFA1-4E50-A18A-0FAF85D35268}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
