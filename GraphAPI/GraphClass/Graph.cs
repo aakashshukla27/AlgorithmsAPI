@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace GraphAPI.GraphClass
 {
-    // graph class
     class Graph
     {
         private readonly int V; // number of vertices
