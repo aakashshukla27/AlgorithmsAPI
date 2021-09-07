@@ -9,7 +9,6 @@ namespace GraphAPI.FlowNetworks
     class FlowEdge
     {
         private readonly int v;
-
         private readonly int w;
         private double capacity;
         private double flow;
