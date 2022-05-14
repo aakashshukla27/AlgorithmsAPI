@@ -22,6 +22,7 @@ namespace GraphAPI
             list.Add(new Edge(3, 4, 6));
             list.Add(new Edge(4, 7, 5));
             list.Add(new Edge(1, 2, 4));
+            // Create graph
             for (int i = 0; i < list.Count; i++)
             {
                 edgeWeightedDigraph.AddEdge(list[i]);
